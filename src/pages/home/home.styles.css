@@ -1,0 +1,120 @@
+:root {
+  --main: #ffc8c4;
+  --white: #ffffff;
+  --bgColor: #ffffff7e;
+  --darkbtn: #bb8682;
+  --maindark: #0e1217;
+  --dark: #1c1f26;
+  --greydark: #b3b3b3;
+  --offwhite: #d4c5c5;
+}
+
+
+.head {
+  padding: "100px 50px";
+  background-color: var(--maindark);
+  margin-top: 4.5rem;
+
+}
+
+
+.modalstyle {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 90%;
+  background-color: var(--white);
+  box-shadow: 24;
+  padding: 20px 15px;
+}
+
+
+.textDiv {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.input {
+
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+
+.spaceY {
+  padding: "16px 0",
+}
+
+.buttonStyles {
+
+  background-color: var(--darkbtn);
+  border-radius: 3px;
+  color: var(--white);
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  margin: 20px 0;
+}
+
+.titleDiv {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  padding: 0 14px;
+  gap: 1rem;
+}
+
+
+.text {
+
+  font-weight: bold;
+  color: var(--offwhite);
+  text-align: justify;
+
+}
+
+
+.created {
+
+  background-color: var(--darkbtn);
+  position: absolute;
+  right: 5;
+  top: 7;
+  z-index: 2;
+  border-radius: 6;
+  padding: 10px 40px;
+  animation-duration: 3s;
+  animation-name: "created";
+}
+
+
+@keyframes created {
+  from {
+    width: 400%;
+    margin-left: 100%,
+
+  }
+
+
+  to {
+
+    margin-left: 0%;
+    width: 100%;
+  }
+
+
+}
